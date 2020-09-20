@@ -15,7 +15,7 @@ public class Day3{
 		Stack<Integer> s = new Stack<Integer>();
 		int max=0,i=0,area=0,currMax=0;
 		while(i<hist.length){
-			if (s.isEmpty()||s.peek()<=hist[i]) {
+			if (s.isEmpty()||s.peek()<hist[i]) {
 				s.push(i);
 				i++;
 			}
