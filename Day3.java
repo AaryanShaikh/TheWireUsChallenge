@@ -4,11 +4,12 @@ public class Day3{
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the number of bars in the histogram");
 		int size = in.nextInt();
+		System.out.println("Enter the sizes of the histogram");
 		int hist[] = new int[size];
 		for(int i=0;i<size;i++){
 			hist[i] = in.nextInt();
 		}
-		System.out.println(maxArea(hist));
+		System.out.println("The max area of the rectangle in the histogram is "+maxArea(hist));
 	}
 	static int maxArea(int hist[]){
 		Stack<Integer> s = new Stack<Integer>();
