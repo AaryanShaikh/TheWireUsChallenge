@@ -15,13 +15,13 @@ public class Day3{
 		Stack<Integer> s = new Stack<Integer>();
 		int max=0,i=0,area=0,currMax=0;
 		while(i<hist.length){
-			if (s.isEmpty()||s.peek()<hist[i]) {
+			if (s.isEmpty()||hist[s.peek]()<hist[i]) {
 				s.push(i);
 				i++;
 			}
 			else{
 				currMax = s.pop(); 
-				area = hist[currMax] * (s.isEmpty() ? i-1 : i-1-s.peek());
+				area = hist[currMax] * (s.isEmpty() ? i : i-1-s.peek());
 				if (area>max) {
 					max = area;
 				}
@@ -29,7 +29,7 @@ public class Day3{
 		}
 		while(!s.isEmpty()){
 			currMax = s.pop(); 
-			area = hist[currMax] * (s.isEmpty() ? i-1 : i-1-s.peek());
+			area = hist[currMax] * (s.isEmpty() ? i : i-1-s.peek());
 			if (area>max) {
 					max = area;
 				}
