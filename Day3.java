@@ -19,7 +19,7 @@ public class Day3{
 				i++;
 			}
 			else{
-				currMax = s.pop(); //current highest value in the stack
+				currMax = s.pop(); 
 				area = hist[currMax] * (s.isEmpty() ? i-1 : i-1-s.peek());
 				if (area>max) {
 					max = area;
@@ -27,7 +27,7 @@ public class Day3{
 			}
 		}
 		while(!s.isEmpty()){
-			currMax = s.pop(); //current highest value in the stack
+			currMax = s.pop(); 
 			area = hist[currMax] * (s.isEmpty() ? i-1 : i-1-s.peek());
 			if (area>max) {
 					max = area;
