@@ -5,7 +5,7 @@ public class Day11{
 		String str = in.nextLine();
 		String strsplit[] = str.split(":");
 		String hh = strsplit[0];
-		String mm = strsplit[1];
+		String mm = strsplit[1]; 
 		String ss = strsplit[2];
 		if (ss.charAt(ss.length()-2) == 'A') {
 			ss=ss.replaceAll("AM","");
