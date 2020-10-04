@@ -10,7 +10,7 @@ public class Day17{
 			j=i;
 			while(j<str.length()){
 				if(i==j){
-					System.out.println(str.charAt(j));
+					System.out.print(str.charAt(j)+" ");
 					j++;
 				}
 				else{
@@ -18,7 +18,7 @@ public class Day17{
 					for (int k=i;k<=n;k++ ) {
 						System.out.print(str.charAt(k));
 					}
-					System.out.println();
+					System.out.print(" ");
 					j++;
 				}
 			}
