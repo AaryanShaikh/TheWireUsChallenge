@@ -22,9 +22,10 @@ public class Day24{
 		System.out.println();
 		count = 0;
 		for (int i=0;i<size ;i++ ) {
-			if (i==index[count++]) {
+			if (i==index[count]) {
 				String strsplit[] = names[i].split(" ");
 				System.out.println(strsplit[1]);
+				count++;
 			}else{
 				System.out.println(names[i]);
 			}
